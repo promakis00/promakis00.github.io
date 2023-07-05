@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORYCTO</title>
+  <style>
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    h3 {
+      color: #333;
+      text-align: center;
+    }
+
+    a {
+      color: aliceblue;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="body.css">
+  <header>
+    <link rel="stylesheet" href="header.css">
+    <a href="/index.html"> ORYCTO</a>
+    <nav>
+      <a href="/login.html">My Company Profile</a>
+      <a href="/partners.html">Our Partners</a>
+      <a href="/contact.html">Contact us</a>
+      <a href="/about.html">About us</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Register your company</h1>
+    <h3>by completing the form below:</h3>
+    <form action="/sendData" method="POST">
+      <fieldset>
+        <legend> &nbsp; Company Representer Details: &nbsp; </legend>
+        <label for="txtFirstName">First Name:</label>
+        <input type="text" name="firstName" id="txtFirstName" required> (*)
+        <br>
+        <label for="txtLastName">Last Name: </label>
+        <input type="text" name="lastName" id="txtLastName" required> (*)
+        <br>
+        <label for="txtTel">Telephone Number: </label>
+        <input type="tel" name="tel" id="txtTel" maxlength="15" required> (*)
+        <br>
+        <label for="txtComName">Company Name: </label>
+        <input type="text" name="companyName" id="txtComName" required> (*)
+        <br>
+        <label for="txtCountry">Country: </label>
+        <input type="text" name="country" id="txtCountry" required> (*)
+        <br>
+        <label for="txtTaxCode">Tax Code:</label>
+        <input type="text" name="TaxCode" id="txtTaxCode" required> (*)
+        <br>
+        <i><small>Fields with (*) are required values!</small></i>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend> &nbsp; Account Details: &nbsp;</legend>
+        <label for="txtEmail">E-Mail:</label>
+        <input type="email" name="email" id="txtEmail" required> (*)
+        &nbsp; <input type="button" id="buttonOTP" value="Send OTP">
+        <br>
+        <label for="txtPass">Password:</label>
+        <input type="password" name="pass" id="txtPass" required> (*)
+        <br>
+        <label for="txtRePass">Repeat Password:</label>
+        <input type="password" name="rePass" id="txtRePass" required> (*)
+        <br>
+        <i><small>Fields with (*) are required values!</small></i>
+      </fieldset>
+      <br>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear Form">
+    </form>
+  </main>
+  <footer>
+    <link rel="stylesheet" href="footer.css">
+    <small>Copyright © 2023 ORYCTO. All Rights Reserved.</small>
+  </footer>
+</body>
+
+</html>

@@ -20,6 +20,21 @@
       color: aliceblue;
       text-align: center;
     }
+
+    fieldset {
+      color: rgb(0, 0, 0);
+      text-align: center;
+    }
+
+    article {
+      color: aliceblue;
+      text-align: center;
+    }
+
+    h5 {
+      color: #333;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -36,14 +51,28 @@
     </nav>
   </header>
   <main>
-    <link rel="stylesheet" href="main.css">
-    <h1>Find your next Raw Material Supplier with ORYCTO!</h1>
-    <h3>Start your search by signing in or registering...</h3>
-    <article>
-      <link rel="stylesheet" href="article.css">
-      <a href="/login.html">Sign In</a>
-      <a href="/register.html">Register</a>
-    </article>
+    <h1>Login with your company account</h1>
+    <form action="/sendData" method="POST">
+      <fieldset>
+        <legend> &nbsp; Account Details &nbsp; </legend>
+        <label for="loginName">E-Mail:</label>
+        <input type="text" name="Name" id="loginName" required>
+        <br>
+        <label for="loginPass">Password:</label>
+        <input type="text" name="Pass" id="loginPass" required>
+        <br>
+      </fieldset>
+
+      <h5>-
+        <input type="submit" value="Login">
+        <input type="button" value="Forgot Password">
+        -
+      </h5>
+    </form>
+
+    <h5>
+      <i>If you don't have an account register your company <a href="/register.html">here</a></i>
+    </h5>
   </main>
   <footer>
     <link rel="stylesheet" href="footer.css">

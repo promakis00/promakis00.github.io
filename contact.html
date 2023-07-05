@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ORYCTO</title>
+  <title>Document</title>
   <style>
     h1 {
       color: #333;
@@ -18,6 +18,16 @@
 
     a {
       color: aliceblue;
+      text-align: center;
+    }
+
+    p {
+      color: rgb(63, 63, 63);
+      text-align: center;
+    }
+
+    form {
+      color: #333;
       text-align: center;
     }
   </style>
@@ -36,15 +46,25 @@
     </nav>
   </header>
   <main>
-    <link rel="stylesheet" href="main.css">
-    <h1>Find your next Raw Material Supplier with ORYCTO!</h1>
-    <h3>Start your search by signing in or registering...</h3>
-    <article>
-      <link rel="stylesheet" href="article.css">
-      <a href="/login.html">Sign In</a>
-      <a href="/register.html">Register</a>
-    </article>
+    <h1>ORYCTO Contact Info:</h1>
   </main>
+  <article>
+    <p>
+      E-Mail us at orycto.mp@gmail.com or press
+      <a href="mailto:orycto.mp@gmail.com">here</a>
+      <br>
+      or else submit your message below:
+    </p>
+  </article>
+  <form action="/sendMessage" method="POST">
+    <fieldset>
+      <label for="textMessage">Your Message:</label>
+      <br>
+      <textarea cols="40" rows="15"></textarea>
+      <br>
+      <input type="submit" value="Send Message">
+    </fieldset>
+  </form>
   <footer>
     <link rel="stylesheet" href="footer.css">
     <small>Copyright © 2023 ORYCTO. All Rights Reserved.</small>
