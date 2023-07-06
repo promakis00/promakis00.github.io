@@ -2,6 +2,8 @@ header {
   text-align: center;
   padding: 15px;
   scale: 0.98;
+  border-color: #111111;
+  border-radius: 0.3cm;
   background-color: #ffffff;
   color: #111111;
 }
